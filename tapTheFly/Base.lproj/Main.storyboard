@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KEJ-3V-xAJ">
+                                <rect key="frame" x="200" y="170" width="200" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Tge-MY-AmY"/>
+                                    <constraint firstAttribute="width" constant="200" id="gW9-WV-phh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" momentary="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vc4-3Z-qeJ">
+                                <rect key="frame" x="170" y="286" width="260" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="260" id="2e3-Y6-pJl"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Fly"/>
+                                    <segment title="Don't Fly"/>
+                                </segments>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="flyAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="SlH-GP-dli"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KEJ-3V-xAJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RjG-1g-9vb"/>
+                            <constraint firstItem="vc4-3Z-qeJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="WRi-vP-KXl"/>
+                            <constraint firstItem="vc4-3Z-qeJ" firstAttribute="top" secondItem="KEJ-3V-xAJ" secondAttribute="bottom" constant="76" id="fMf-5Y-MSj"/>
+                            <constraint firstItem="vc4-3Z-qeJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zfN-Eg-v0g"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="elementLabel" destination="KEJ-3V-xAJ" id="Z8o-KQ-978"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
